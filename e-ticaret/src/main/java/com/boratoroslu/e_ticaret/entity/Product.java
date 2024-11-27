@@ -1,8 +1,7 @@
-package com.example.e_commerce.entity;
+package com.boratoroslu.e_ticaret.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Generated;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -19,8 +18,8 @@ public class Product {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne  //bir çok product nesnesi tek bir kategori id'sine ait olabilir.
-    @JoinColumn(name = "category_id", nullable = false) // category_id stünun boş geçilemez olduğunu belirtiyoruz
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;
 
     @Column(name = "sku")
@@ -29,19 +28,18 @@ public class Product {
     private String name;
     @Column(name = "description")
     private String description;
-    @Column(name = "unitPrice")
+    @Column(name = "unit_price")
     private BigDecimal unitPrice;
-    @Column(name = "imageUrl")
+    @Column(name = "image_url")
     private String imageUrl;
     @Column(name = "active")
     private boolean active;
-    @Column(name = "UnitInStock")
-    private int UnitInStock;
-    @Column(name = "dateCreated")
-    @CreationTimestamp//bir entitiy nesnesi ilk kez veri tabanına kayıt edildiğinde bu nesnenin oluşturulma zamanını belirlemek için
+    @Column(name = "units_in_stock")
+    private int unitsInStock;
+    @Column(name = "date_created")
+    @CreationTimestamp //ilk kez veri tabanına eklendiğinde oluşturulma tarihini gösteriyor
     private Date dateCreated;
-    @Column(name = "castUpdated")
-    @UpdateTimestamp// "" """ "" " """ her update edildiğinde güncelleme zamanını
-    private Date castUpdated;
-
+    @Column(name = "last_updated")
+    @UpdateTimestamp // update edildiği tarihi göstermek için
+    private Date lastUpdated;
 }

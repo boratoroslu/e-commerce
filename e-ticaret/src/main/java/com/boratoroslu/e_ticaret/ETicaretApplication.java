@@ -1,13 +1,13 @@
-package com.example.e_commerce;
+package com.boratoroslu.e_ticaret;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ECommerceApplication {
+public class ETicaretApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ECommerceApplication.class, args);
+		SpringApplication.run(ETicaretApplication.class, args);
 	}
 
 }

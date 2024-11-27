@@ -1,10 +1,10 @@
-package com.example.e_commerce;
+package com.boratoroslu.e_ticaret;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ECommerceApplicationTests {
+class ETicaretApplicationTests {
 
 	@Test
 	void contextLoads() {

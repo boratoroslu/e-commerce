@@ -8,11 +8,11 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>e-commerce</artifactId>
+	<groupId>com.boratoroslu</groupId>
+	<artifactId>e-ticaret</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>e-commerce</name>
-	<description>e-commerce project.</description>
+	<name>e-ticaret</name>
+	<description>e-ticaret platform</description>
 	<url/>
 	<licenses>
 		<license/>
