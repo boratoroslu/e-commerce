@@ -1,0 +1,69 @@
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/images/logo.png" alt="kalorisizkod" class="img-responsive">
+      </a>
+    </div>
+    <div class="menu-sidebar-content js-scrollbar1">
+      <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+          <li>
+            <a routerLink="/category/10" routerlinkActive="active-link">Telefon</a>
+          </li>
+          <li>
+            <a routerLink="/category/11" routerlinkActive="active-link">Televizyon</a>
+          </li>
+          <li>
+            <a routerLink="/category/12" routerlinkActive="active-link">Bilgisayar</a>
+          </li>
+          <li>
+            <a routerLink="/category/13" routerlinkActive="active-link">Küçük Ev Aletleri</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <!-- END MENU SIDEBAR-->
+   <!-- PAGE CONTAINER-->
+		<div class="page-container">
+			<!-- HEADER DESKTOP-->
+			<header class="header-desktop">
+				<div class="section-content section-content-p30">
+					<div class="container-fluid">
+						<div class="header-wrap">
+							<form class="form-header" onsubmit="return false;" method="GET">
+								<input class="au-input au-input-xl" type="text" name="search"
+									placeholder="Aramak istediğiniz ürünü giriniz ..." />
+								<button class="au-btn-submit" type="submit">
+									Ara
+								</button>
+							</form>
+							<div class="cart-area d-n">
+								<a href="shopping-detail.html">
+									<div class="total">3000,44 <span> 2</span> </div> <i class="fa fa-shopping-cart"
+										aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+						<div class="account-wrap"></div>
+					</div>
+				</div>
+			</header>
+			<!-- END HEADER DESKTOP-->
+
+      <!-- MAIN CONTENT-->
+       <router-outlet></router-outlet>
+       
+       <footer>
+        <ul>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Bize Ulaşın</a></li>
+          <li><a href="#">Yardım</a></li>
+        </ul>
+      </footer>
+    
+    
+    <!-- end document-->
